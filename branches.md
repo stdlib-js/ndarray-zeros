@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros"
-click B href "https://github.com/stdlib-js/ndarray-zeros/tree/main"
-click C href "https://github.com/stdlib-js/ndarray-zeros/tree/production"
-click D href "https://github.com/stdlib-js/ndarray-zeros/tree/esm"
-click E href "https://github.com/stdlib-js/ndarray-zeros/tree/deno"
-click F href "https://github.com/stdlib-js/ndarray-zeros/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros"
+%% click B href "https://github.com/stdlib-js/ndarray-zeros/tree/main"
+%% click C href "https://github.com/stdlib-js/ndarray-zeros/tree/production"
+%% click D href "https://github.com/stdlib-js/ndarray-zeros/tree/esm"
+%% click E href "https://github.com/stdlib-js/ndarray-zeros/tree/deno"
+%% click F href "https://github.com/stdlib-js/ndarray-zeros/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros
