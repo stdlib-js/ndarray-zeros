@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@v0.2.0-esm/index.mjs';
 ```
 
 #### zeros( shape\[, options] )
@@ -133,7 +133,7 @@ var dt = arr.dtype;
 <script type="module">
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@v0.2.0-esm/index.mjs';
 
 // Get a list of data types:
 var dt = dtypes();
