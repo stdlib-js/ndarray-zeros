@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2026-01-31)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
 -   [`09ffc3c`](https://github.com/stdlib-js/stdlib/commit/09ffc3c9d3609ca545f2e4509eb81151a10c45b1) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`2c927e4`](https://github.com/stdlib-js/stdlib/commit/2c927e403da0ed8841b6ce19296262a88c9856e0) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`f62c303`](https://github.com/stdlib-js/stdlib/commit/f62c303e990ecc605a34774772091dda14e3088f) - **refactor:** use assertion utility _(by Athan Reines)_
