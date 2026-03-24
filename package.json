@@ -44,7 +44,6 @@
     "@stdlib/ndarray-base-buffer": "^0.3.1",
     "@stdlib/ndarray-base-numel": "^0.2.3",
     "@stdlib/ndarray-base-shape2strides": "^0.2.3",
-    "@stdlib/ndarray-base-strides2offset": "^0.2.3",
     "@stdlib/ndarray-ctor": "^0.3.1",
     "@stdlib/ndarray-defaults": "^0.4.1",
     "@stdlib/string-format": "^0.2.3",

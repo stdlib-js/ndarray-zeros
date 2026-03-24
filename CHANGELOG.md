@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-03-24)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`2f38ba6`](https://github.com/stdlib-js/stdlib/commit/2f38ba6131bab259ecee5ad42d6793bde0c213b3) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`6a0008d`](https://github.com/stdlib-js/stdlib/commit/6a0008d0315752288d76406de68fbcdc3b3015e5) - **bench:** refactor to use string interpolation in `ndarray/zeros` [(#10369)](https://github.com/stdlib-js/stdlib/pull/10369) _(by Shubham)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Shubham
 
 </section>
