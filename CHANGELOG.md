@@ -6,12 +6,27 @@
 
 ## Unreleased (2026-03-24)
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - ensure support for \"generic\" ndarrays
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`4413f82`](https://github.com/stdlib-js/stdlib/commit/4413f826f8d2a9ba684498d4c723cfd371016a2e) - **docs:** update type _(by Athan Reines)_
+-   [`67a3171`](https://github.com/stdlib-js/stdlib/commit/67a3171ca94556942939b0c3fcecb2494e28d920) - **style:** disable lint rule _(by Athan Reines)_
+-   [`755d111`](https://github.com/stdlib-js/stdlib/commit/755d111baf2fff9689e94540174e3c4189622806) - **refactor:** more strictly enforce shape constraints _(by Athan Reines)_
+-   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - **fix:** ensure support for \"generic\" ndarrays _(by Athan Reines)_
+-   [`b1dea8f`](https://github.com/stdlib-js/stdlib/commit/b1dea8f62ef00472658f628c3c2927e46ae4ad82) - **refactor:** enforce dtype constraints _(by Athan Reines)_
 -   [`01c5fe8`](https://github.com/stdlib-js/stdlib/commit/01c5fe8bb5d36b645584402df9f7ec6298de10b6) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
 -   [`2f38ba6`](https://github.com/stdlib-js/stdlib/commit/2f38ba6131bab259ecee5ad42d6793bde0c213b3) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`6a0008d`](https://github.com/stdlib-js/stdlib/commit/6a0008d0315752288d76406de68fbcdc3b3015e5) - **bench:** refactor to use string interpolation in `ndarray/zeros` [(#10369)](https://github.com/stdlib-js/stdlib/pull/10369) _(by Shubham)_
