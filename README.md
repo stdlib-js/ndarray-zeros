@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-zeros
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
+var zeros = require( '@stdlib/ndarray-zeros' );
 ```
 
 #### zeros( shape\[, options] )
@@ -60,49 +78,58 @@ import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.
 Creates a zero-filled [ndarray][@stdlib/ndarray/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var arr = zeros( [ 2, 2 ] );
-// returns <ndarray>
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
-var sh = arr.shape;
+var arr = zeros( [ 2, 2 ] );
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+
+var sh = getShape( arr );
 // returns [ 2, 2 ]
 
-var dt = arr.dtype;
+var dt = String( getDType( arr ) );
 // returns 'float64'
 ```
 
-The specified output [ndarray][@stdlib/ndarray/ctor] `shape` may be either an array-like object or an integer value.
+The specified output [ndarray][@stdlib/ndarray/ctor] shape may be either an array-like object or an integer value.
 
 ```javascript
-var arr = zeros( 2 );
-// returns <ndarray>
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
-var sh = arr.shape;
+var arr = zeros( 2 );
+// returns <ndarray>[ 0.0, 0.0 ]
+
+var sh = getShape( arr );
 // returns [ 2 ]
 
-var dt = arr.dtype;
+var dt = String( getDType( arr ) );
 // returns 'float64'
 ```
 
-The function accepts the following `options`:
+The function accepts the following options:
 
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". Default: `'float64'`.
+-   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric or "generic" [data type][@stdlib/ndarray/dtypes]. Default: `'float64'`.
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style). Default: `'row-major'`.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
--   **readonly**: `boolean` indicating whether an array should be **read-only**. Default: `false`.
+-   **mode**: specifies how to handle indices which exceed array dimensions (see [ndarray][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [ndarray][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **readonly**: boolean indicating whether an array should be **read-only**. Default: `false`.
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [`float64`][@stdlib/ndarray/dtypes] data type. To specify an alternative [data type][@stdlib/ndarray/dtypes], provide a `dtype` option.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
+
 var arr = zeros( [ 2, 2 ], {
     'dtype': 'float32'
 });
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
-var sh = arr.shape;
+var sh = getShape( arr );
 // returns [ 2, 2 ]
 
-var dt = arr.dtype;
+var dt = String( getDType( arr ) );
 // returns 'float32'
 ```
 
@@ -127,11 +154,12 @@ var dt = arr.dtype;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 // Get a list of data types:
-var dt = dtypes( 'numeric' );
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-filled arrays...
 var arr;
@@ -140,7 +168,7 @@ for ( i = 0; i < dt.length; i++ ) {
     arr = zeros( [ 2, 2 ], {
         'dtype': dt[ i ]
     });
-    console.log( arr.data );
+    console.log( ndarray2array( arr ) );
 }
 ```
 
@@ -180,7 +208,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -243,15 +271,15 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-zeros/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty/tree/deno
+[@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray-empty
 
-[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like/tree/deno
+[@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray-zeros-like
 
 <!-- </related-links> -->
 
