@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`01c5fe8`](https://github.com/stdlib-js/stdlib/commit/01c5fe8bb5d36b645584402df9f7ec6298de10b6) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
 -   [`2f38ba6`](https://github.com/stdlib-js/stdlib/commit/2f38ba6131bab259ecee5ad42d6793bde0c213b3) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`6a0008d`](https://github.com/stdlib-js/stdlib/commit/6a0008d0315752288d76406de68fbcdc3b3015e5) - **bench:** refactor to use string interpolation in `ndarray/zeros` [(#10369)](https://github.com/stdlib-js/stdlib/pull/10369) _(by Shubham)_
 
