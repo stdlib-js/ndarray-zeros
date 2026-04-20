@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-09)
+## Unreleased (2026-04-20)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`869c9da`](https://github.com/stdlib-js/stdlib/commit/869c9da0b2ec6d3a4f9bfd7806a32eeb9d5c973f) - **bench:** fix swapped dtypes in size benchmarks [(#11648)](https://github.com/stdlib-js/stdlib/pull/11648) _(by Philipp Burckhardt)_
 -   [`4413f82`](https://github.com/stdlib-js/stdlib/commit/4413f826f8d2a9ba684498d4c723cfd371016a2e) - **docs:** update type _(by Athan Reines)_
 -   [`67a3171`](https://github.com/stdlib-js/stdlib/commit/67a3171ca94556942939b0c3fcecb2494e28d920) - **style:** disable lint rule _(by Athan Reines)_
 -   [`755d111`](https://github.com/stdlib-js/stdlib/commit/755d111baf2fff9689e94540174e3c4189622806) - **refactor:** more strictly enforce shape constraints _(by Athan Reines)_
@@ -41,9 +42,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   Shubham
 
 </section>
