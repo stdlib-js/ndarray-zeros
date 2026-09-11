@@ -57,6 +57,7 @@
   "devDependencies": {
     "@stdlib/array-complex128": "^0.3.2",
     "@stdlib/array-complex64": "^0.3.2",
+    "@stdlib/array-float16": "github:stdlib-js/array-float16#main",
     "@stdlib/array-float32": "^0.2.3",
     "@stdlib/array-float64": "^0.2.3",
     "@stdlib/array-int16": "^0.2.3",
